@@ -7,12 +7,15 @@
     "jspm": "^0.16.13"
   },
   "devDependencies": {
+    "html-dist": "^0.1.0",
     "jspm": "^0.16.13",
     "live-server": "^0.8.2",
     "tsd": "^0.6.5"
   },
   "scripts": {
-    "postinstall": "tsd install"
+    "postinstall": "tsd install",
+    "dist": "rm -rf dist; mkdir dist; jspm bundle-sfx src/main dist/app.min.js;./node_modules/.bin/html-dist index.html --remove-all --minify --insert app.min.js -o dist/index.html",
+    "dist-mini": "rm -rf dist; mkdir dist; jspm bundle-sfx src/main dist/app.min.js --minify;./node_modules/.bin/html-dist index.html --remove-all --minify --insert app.min.js -o dist/index.html"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +27,7 @@
       "less": "github:aaike/jspm-less-plugin@^0.0.5"
     },
     "devDependencies": {
+      "clean-css": "npm:clean-css@^3.4.6",
       "typescript": "npm:typescript@^1.6.2"
     }
   }
