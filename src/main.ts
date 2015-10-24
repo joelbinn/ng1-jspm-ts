@@ -1,9 +1,9 @@
+/// <reference path="./declarations.d.ts" />
 import 'bootstrap';
 import 'bootstrap/css/bootstrap.css!'
-export class Main {
-    greet() {
-        console.log('Main is ready');
-    }
-}
+import 'angular';
+import Hello from './hello/Hello';
 
-new Main().greet();
+let main = angular.module('main', [Hello.name]);
+
+console.log('main has started');

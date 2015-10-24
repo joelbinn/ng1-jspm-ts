@@ -31,6 +31,7 @@ System.config({
   },
 
   map: {
+    "angular": "github:angular/bower-angular@1.4.7",
     "bootstrap": "github:twbs/bootstrap@3.3.5",
     "css": "github:systemjs/plugin-css@0.1.19",
     "less": "github:aaike/jspm-less-plugin@0.0.5",
