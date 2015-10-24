@@ -1,0 +1,28 @@
+{
+  "name": "ng1-jspm-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jspm": "^0.16.13"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.13",
+    "live-server": "^0.8.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "dependencies": {
+      "bootstrap": "github:twbs/bootstrap@^3.3.5",
+      "css": "github:systemjs/plugin-css@^0.1.19",
+      "less": "github:aaike/jspm-less-plugin@^0.0.5"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  }
+}
