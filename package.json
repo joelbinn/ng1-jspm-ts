@@ -13,7 +13,7 @@
     "tsd": "^0.6.5"
   },
   "scripts": {
-    "postinstall": "tsd install",
+    "postinstall": "jspm install; tsd install",
     "dist": "rm -rf dist; mkdir dist; jspm bundle-sfx src/main dist/app.min.js;./node_modules/.bin/html-dist index.html --remove-all --minify --insert app.min.js -o dist/index.html",
     "dist-mini": "rm -rf dist; mkdir dist; jspm bundle-sfx src/main dist/app.min.js --minify;./node_modules/.bin/html-dist index.html --remove-all --minify --insert app.min.js -o dist/index.html"
   },
